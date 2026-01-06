@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Pink background strip */
+.pink-strip {
+    margin: 120px auto 0 auto;      /* top white space like screenshot */
+    width: 80%;
+    height: 350px;
+    background-color: #ffc7d4;      /* soft pink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White login card */
+.login-card {
+    width: 420px;
+    padding: 32px 40px 28px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* soft shadow like cards */ /* [web:64][web:60] */
+    text-align: left;
+}
+
+/* Title */
+.login-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 28px;
+    color: #111827;
+}
+
+/* Field group */
+.field-group {
+    margin-bottom: 16px;
+}
+
+.field-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111827;
+}
+
+/* Inputs similar to Bootstrap style */
+.field-group input {
+    width: 100%;
+    height: 38px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    font-size: 13px;
+    color: #111827;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field-group input::placeholder {
+    color: #9ca3af;
+}
+
+.field-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb33;
+}
+
+/* Login button */
+.login-button {
+    width: 100%;
+    margin-top: 4px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.login-button:hover {
+    background-color: #0069d9;
+}
+
+/* Forgot password link */
+.forgot-link {
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+/* Wrapper for the 3 number grids */
+.grids-wrapper {
+    margin: 40px auto 80px auto;
+    width: 80%;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    max-width: calc(300px * 2 + 32px);
+}
+
+
+.number-grid {
+    display: grid;
+    gap: 6px;
+    padding: 6px;
+    background: #f58cac;
+    width: 300px;
+}
+
+.number-grid .cell {
+    background: black;
+    color: white;
+    border: 3px solid #f58cac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Times New Roman", serif;
+}
+
+
+/* Special sizes to mimic layout */
+
+/* Grid 1 layout */
+.grid-1 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 70px 70px;
+}
+
+.grid-1 .cell:nth-child(1) {
+    grid-column: 1 / 4;
+}
+
+.grid-1 .cell:nth-child(2) {
+    grid-column: 4;
+    grid-row: 1 / 3;
+}
+
+
+/* Grid 2 layout */
+.grid-2 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 70px 70px;
+}
+
+.grid-2 .cell:nth-child(1) {
+    grid-column: 1 / 4;
+}
+
+.grid-2 .cell:nth-child(2) {
+    grid-column: 4;
+}
+
+.grid-2 .cell:nth-child(6) {
+    grid-column: 4;
+}
+
+
+.grid-3 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 70px 70px;
+}
+
+.grid-3 .cell:nth-child(1) {
+    grid-column: 1 / 4;
+}
+
+.grid-3 .cell:nth-child(2) {
+    grid-column: 4;
+    grid-row: 1 / 3;
+}
+
+/* ================================
+   WIREFRAME SECTION
+   ================================ */
+
+.wireframes {
+    width: 96%;
+    margin: 40px auto 60px auto;
+    padding: 40px 40px 50px;
+    background-color: #fff5f5; /* very light pink like reference */
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 140px;
+    row-gap: 70px;
+    justify-content: start;
+    align-content: start;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Each device column */
+.device {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.device-label {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333333;
+}
+
+/* Common frame box */
+.frame {
+    display: grid;
+    gap: 8px;
+    color: #ff7158;
+    font-size: 10px;
+}
+
+/* Common inner box style */
+.frame .box {
+    border: 2px solid #ff7158;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background-color: #fffdfd;
+}
+
+/* ---------- MOBILE (single narrow column) ---------- */
+
+.frame-mobile {
+    width: 170px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 26px;
+}
+
+.frame-mobile .main {
+    height: 170px;          /* tall main block like picture */
+}
+
+/* ---------- TABLET (clean 2-column layout) ---------- */
+
+.frame-tablet {
+    width: 340px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: auto auto 220px auto;
+    gap: 8px;
+}
+
+/* header */
+.frame-tablet .header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+/* navigation */
+.frame-tablet .nav {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+/* sidebar */
+.frame-tablet .sidebar {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+/* main */
+.frame-tablet .main {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+/* ads */
+.frame-tablet .ads {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+/* footer */
+.frame-tablet .footer {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+
+/* ---------- DESKTOP (wide layout) ---------- */
+
+.frame-desktop {
+    width: 520px;
+    display: grid;
+    grid-template-columns: 100px 1fr 80px;
+    grid-template-rows: 26px 40px 260px 26px;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+/* header full width row 1 */
+.frame-desktop .header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+/* nav row 2 middle, stretching horizontally */
+.frame-desktop .nav {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* sidebar tall left */
+.frame-desktop .sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+/* main big center block */
+.frame-desktop .main {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+/* ads tall right */
+.frame-desktop .ads {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+/* footer full width bottom */
+.frame-desktop .footer {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+}

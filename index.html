@@ -2,25 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS Grid Exercises</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 40px;
-        }
-        a {
-            display: block;
-            margin: 12px 0;
-            font-size: 18px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="pink-strip">
+        <div class="login-card">
+            <h2 class="login-title">Login</h2>
 
-    <h1>CSS Grid Exercises</h1>
+            <div class="field-group">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your username">
+            </div>
 
-    <a href="page1.html">Page 1 — Grid Number Layout</a>
-    <a href="page2.html">Page 2 — Responsive Layout</a>
+            <div class="field-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password">
+            </div>
 
+            <button class="login-button">Login</button>
+
+            <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+    </div>
+        <!-- Number grids section -->
+    <div class="grids-wrapper">
+        <div class="number-grid grid-1">
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+    <div class="cell">6</div>
+    <div class="cell">7</div>
+    <div class="cell">8</div>
+    <div class="cell">9</div>
+</div>
+
+<div class="number-grid grid-2">
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+    <div class="cell">6</div>
+    <div class="cell">7</div>
+    <div class="cell">8</div>
+    <div class="cell">9</div>
+</div>
+
+<div class="number-grid grid-3">
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+    <div class="cell">6</div>
+    <div class="cell">7</div>
+    <div class="cell">8</div>
+    <div class="cell">9</div>
+</div>
+
+    </div>
+        <!-- Responsive wireframes section -->
+    <section class="wireframes">
+        <div class="device mobile">
+            <h3 class="device-label">Mobile</h3>
+            <div class="frame frame-mobile">
+                <div class="box header">header</div>
+                <div class="box nav">navigation</div>
+                <div class="box main">main</div>
+                <div class="box sidebar">sidebar</div>
+                <div class="box ads">ads</div>
+                <div class="box footer">footer</div>
+            </div>
+        </div>
+
+        <div class="device tablet">
+            <h3 class="device-label">Tablet</h3>
+            <div class="frame frame-tablet">
+                <div class="box header">header</div>
+                <div class="box nav">navigation</div>
+                <div class="box sidebar">sidebar</div>
+                <div class="box main">main</div>
+                <div class="box ads">ads</div>
+                <div class="box footer">footer</div>
+            </div>
+        </div>
+
+        <div class="device desktop">
+            <h3 class="device-label">Desktop</h3>
+            <div class="frame frame-desktop">
+                <div class="box header">header</div>
+                <div class="box nav">navigation</div>
+                <div class="box sidebar">sidebar</div>
+                <div class="box main">main</div>
+                <div class="box ads">ads</div>
+                <div class="box footer">footer</div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
